@@ -1,1 +1,45 @@
-<p>heroes works!</p>
+<div class="row mt-3">
+    <div class="col-12 animated fadeIn slow">
+        <h1>Listado de heroes</h1>
+        <hr>
+    </div>
+    <div class="col-12">
+        <button type="button" class="btn btn-outline-primary btn-sm mb-2 animated fadeInLeftBig faster float-right" routerLink="/heroe/nuevo">
+            <li class="fa fa-plus"></li>
+             Agregar
+        </button>
+        <table class="table table-striped table-hover table-responsive-md 
+            animated fadeInDownBig faster">
+            <thead class="thead-primary">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Poder</th>
+                    <th scope="col">Vivo</th>
+                    <th scope="col">Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="alert alert-primary text-center mt-3 animated fadeInUpBig faster">
+            <h4 class="alert-heading">Cargando...</h4>
+            <i class="fa fa-refresh fa-spin fa-3x" aria-hidden="true"></i>
+            <p class="mt-2 mb-0">Espere por favor</p>
+        </div>
+
+        <div class="alert alert-warning text-center mt-3 animated fadeInDownBig faster">
+            <h4 class="alert-heading">No se encontraron registros...</h4>
+            <i class="fa fa-exclamation-triangle fa-3x" aria-hidden="true"></i>
+        </div>
+
+    </div>
+</div>
